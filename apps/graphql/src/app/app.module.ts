@@ -16,9 +16,8 @@ import { serializeQueryPlan } from '@apollo/query-planner';
         supergraphSdl: new IntrospectAndCompose({
           subgraphs: [
             { name: 'users', url: 'http://localhost:3000/graphql' },
-            { name: 'packages', url: 'http://localhost:3001/graphql' },
-            { name: 'userPackages', url: 'http://localhost:3002/graphql' },
-            { name: 'search', url: 'http://localhost:3003/graphql' },
+            { name: 'products', url: 'http://localhost:3001/graphql' },
+            { name: 'userProducts', url: 'http://localhost:3002/graphql' },
           ],
         }),
         experimental_didResolveQueryPlan: (options) => {
